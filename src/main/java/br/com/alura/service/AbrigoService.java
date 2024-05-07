@@ -3,10 +3,6 @@ package br.com.alura.service;
 import br.com.alura.client.ClientHttpConfiguration;
 import br.com.alura.domain.Abrigo;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 import java.io.IOException;
 import java.net.http.HttpResponse;
@@ -54,7 +50,7 @@ public class AbrigoService {
         for (Abrigo abrigo : abrigoList) {
             long id = abrigo.getId();
             String nome = abrigo.getNome();
-            System.out.println(id +" - " +nome);
-            }
+            System.out.println(id + " - " + nome);
+        }
     }
 }
